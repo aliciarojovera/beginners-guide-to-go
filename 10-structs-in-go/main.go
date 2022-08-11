@@ -26,6 +26,7 @@ func main() {
 			Technologies: []string{"Go"},
 		},
 	}
+	// to print the name of the field
 	fmt.Printf("%+v\n", engineer)
 
 	fmt.Println(engineer.Project.Name)

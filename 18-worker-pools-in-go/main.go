@@ -42,7 +42,7 @@ func main() {
 	urls := []string{
 		"https://tutorialedge.net",
 		"https://tutorialedge.net/pricing/",
-		"https://example.com",
+		"https://facebook.com",
 		"https://google.com",
 	}
 

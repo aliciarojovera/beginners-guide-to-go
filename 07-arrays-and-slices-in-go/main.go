@@ -1,11 +1,14 @@
 package main
 
+// format package
 import "fmt"
 
 func main() {
 	println("Arrays and Slices in Go")
 
 	// [1, 2, 3, 4]
+	// cantidad starting in 1
+	// fmt => to print arrays
 	planets := [8]string{"mercury", "venus", "earth", "mars", "jupiter", "saturn", "uranus", "nepture"}
 	fmt.Println(planets)
 

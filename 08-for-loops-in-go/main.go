@@ -22,10 +22,12 @@ func main() {
 		i++
 	}
 
+	// break loop
 	for {
 		break
 	}
 
+	// continue to stop the funtion and continue with the loop
 	for i := 0; i < 10; i++ {
 		if i%2 != 0 {
 			continue

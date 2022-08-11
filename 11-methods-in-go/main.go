@@ -21,6 +21,7 @@ func (e Engineer) Print() {
 	fmt.Printf("Current Project: %s\n", e.Project.Name)
 }
 
+// * to update the receiver
 func (e *Engineer) UpdateAge() {
 	e.Age += 1
 }

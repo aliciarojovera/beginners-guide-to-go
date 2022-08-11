@@ -18,6 +18,7 @@ func (a *Account) Withdraw(value int, wg *sync.WaitGroup) {
 }
 
 func (a *Account) Deposit(value int, wg *sync.WaitGroup) {
+	// to perform the important code and make it synchronous
 	a.Mutex.Lock()
 	a.Balance += value
 	a.Mutex.Unlock()

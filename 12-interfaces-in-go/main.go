@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// interface 4 funct
 type Employee interface {
 	GetName() string
 }
@@ -29,6 +30,8 @@ func PrintDetails(e Employee) {
 func main() {
 	engineer := &Engineer{Name: "Elliot"}
 	manager := &Manager{Name: "Donna"}
-	PrintDetails(engineer)
+	 PrintDetails(engineer)
 	PrintDetails(manager)
+
+	fmt.Println(engineer.GetName())
 }

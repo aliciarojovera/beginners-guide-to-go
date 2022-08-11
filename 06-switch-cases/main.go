@@ -1,5 +1,6 @@
 package main
 
+// loww-level type information
 import "runtime"
 
 func main() {

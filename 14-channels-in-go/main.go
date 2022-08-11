@@ -6,7 +6,8 @@ import (
 )
 
 func CalculateValue(values chan int) {
-	value := rand.Intn(10)
+	// random
+	value := rand.Intn(11)
 	fmt.Printf("Value Calculated: %d\n", value)
 	values <- value
 }
@@ -15,7 +16,7 @@ func main() {
 	values := make(chan int)
 	go CalculateValue(values)
 	go CalculateValue(values)
-
+ 	// <- block until something is received
 	value := <-values
 	value2 := <-values
 	fmt.Println(value)
